@@ -1,27 +1,22 @@
 const express = require('express')
 const app = express()
 const mongoose = require('mongoose')
-
-app.get("/", (req,res) =>{
-    res.send("product list")
-})
+require('dotenv/config')
 
 // routes
 const productRouter = require('./routes/products')
 
-
 // connect to DB
 mongoose.connect(
-    'mongodb://localhost:27017/products', 
+    process.env.DB_CONNECTION, 
     { useNewUrlParser: true}, 
     () => console.log('connect to db')
 )
     
-
 // enabling routes
 app.use('/products',productRouter)
 
 
-// 
+// server port
 app.listen(3000)
 
