@@ -1,1 +1,4 @@
 /node_modules
+
+# client.http is a testing tool 
+/client.http
