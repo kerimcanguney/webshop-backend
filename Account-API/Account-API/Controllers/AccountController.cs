@@ -5,12 +5,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Account_API.Services;
+using Account_API.ViewModels;
+using Account_API.Models;
+
 namespace Account_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     public class AccountController : ControllerBase
     {
+        AccountService accountService = new AccountService();
 
         [HttpGet]
         [Route("/get")]
@@ -21,14 +25,19 @@ namespace Account_API.Controllers
 
             return All;
         }
+        
+        [HttpPost]
+        [Route("/Create")]
+        public string CreateAccount(AccountDTO accountDTO)
+        {
+            return accountService.CreateAccount(accountDTO);
+        }
 
         [HttpPost]
-        [Route("/post")]
-        public string CreatePassword(string password)
+        [Route("/Login")]
+        public string LoginAccount(string Email, string Password)
         {
-            string HashedPw = PasswordHashing.HashNewPassword(password);
-
-            return HashedPw;
+            return accountService.Login(Email, Password);
         }
 
     }

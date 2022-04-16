@@ -9,7 +9,7 @@ namespace Account_API.Models
     {
         public int Id { get; set; }
         public string Hash { get; set; }
-        public string Salt { get; set; }
+        public byte[] Salt { get; set; }
         public bool Requested_Reset { get; set; }
         public string? Reset_Code { get; set; }
         public DateTime? Reset_Time { get; set; }
