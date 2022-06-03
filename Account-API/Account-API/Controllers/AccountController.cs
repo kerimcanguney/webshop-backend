@@ -7,6 +7,7 @@ using Account_API.Models;
 using System.Security.Claims;
 using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Authorization;
+using System.Text.Json;
 
 namespace Account_API.Controllers
 {
@@ -30,9 +31,11 @@ namespace Account_API.Controllers
 
         [HttpPost]
         [Route("/Login")]
-        public string LoginAccount(string Email, string Password)
+        public Token LoginAccount(LoginAccount loginAccount)
         {
-            return accountService.Login(Email, Password);
+            string token = accountService.Login(loginAccount.Email, loginAccount.Password);
+            
+            return new Token() { token = token };
         }
 
         [HttpGet]
