@@ -21,15 +21,6 @@ namespace Account_API.Controllers
             this._config = _config;
             accountService = new AccountService(_config);
         }
-        [HttpGet]
-        [Route("/get")]
-        public Array GetAllAccounts()
-        {
-            var context = new WsContext();
-            var All = context.Accounts.ToArray();
-            return All;
-        }
-        
         [HttpPost]
         [Route("/Create")]
         public string CreateAccount(AccountDTO accountDTO)
@@ -53,6 +44,7 @@ namespace Account_API.Controllers
             
             return "Hello " + account.Surname;
         }
+
         private Account GetCurrentUserViaHttpContext()
         {
             var identity = HttpContext.User.Identity as ClaimsIdentity;

@@ -12,7 +12,7 @@ using System.Text;
 
 namespace Account_API.Services
 {
-    public class AccountService
+    public class AccountService 
     {
         private IConfiguration configuration;
         public AccountService(IConfiguration _config)
@@ -77,8 +77,6 @@ namespace Account_API.Services
             }
             return "valid";
         }
-
-
         public string Login(string email, string password)
         {
             Account _account;
@@ -98,7 +96,7 @@ namespace Account_API.Services
             }
 
             string token = GenerateToken(_account);
-            return "logged in token:"+token;
+            return token;
         }
         private string GenerateToken(Account account)
         {
@@ -119,7 +117,5 @@ namespace Account_API.Services
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
-        
-
     }
 }
