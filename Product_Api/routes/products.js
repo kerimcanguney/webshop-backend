@@ -2,7 +2,6 @@ const express = require('express')
 const router = express.Router()
 const Product = require('../models/product')
 
-
 // GET all
 router.get("/", async (req,res) =>{
     try {

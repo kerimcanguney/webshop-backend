@@ -5,7 +5,6 @@ D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-AP
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-API.runtimeconfig.json
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-API.runtimeconfig.dev.json
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-API.dll
-D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\ref\Account-API.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-API.pdb
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.OpenApi.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
@@ -19,7 +18,6 @@ D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\Account-AP
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\Account-API.MvcApplicationPartsAssemblyInfo.cs
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\Account-API.MvcApplicationPartsAssemblyInfo.cache
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\staticwebassets\Account-API.StaticWebAssets.Manifest.cache
-D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\staticwebassets\Account-API.StaticWebAssets.xml
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\scopedcss\bundle\Account-API.styles.css
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\Account-API.RazorTargetAssemblyInfo.cache
 D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\Account-API.csproj.CopyComplete
@@ -41,7 +39,6 @@ D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
-D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Newtonsoft.Json.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
@@ -59,3 +56,9 @@ D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\runtimes\w
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+<<<<<<< Updated upstream
+=======
+D:\School-S3\webshop-backend\Account-API\Account-API\bin\Debug\net5.0\Account-API.StaticWebAssets.xml
+>>>>>>> Stashed changes
+D:\School-S3\webshop-backend\Account-API\Account-API\obj\Debug\net5.0\refint\Account-API.dll

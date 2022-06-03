@@ -1,14 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Account_API.Models;
+﻿using Account_API.Models;
 using Account_API.ViewModels;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System;
+using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
+using System.Linq;
+using System.Security.Claims;
+using System.Text;
+
 namespace Account_API.Services
 {
-    public class AccountService
+    public class AccountService 
     {
+        private IConfiguration configuration;
+        public AccountService(IConfiguration _config)
+        {
+            configuration = _config;
+        }
         public string CreateAccount(AccountDTO accountDTO)
         {
             string Validation = ValidateInfo(accountDTO.Email, accountDTO.Password);
@@ -67,10 +77,9 @@ namespace Account_API.Services
             }
             return "valid";
         }
-
-
         public string Login(string email, string password)
         {
+            Account _account;
             using (var context = new WsContext())
             {
                 List<Account> CollisionList = context.Accounts.Where(x => x.Email == email).ToList();
@@ -83,8 +92,30 @@ namespace Account_API.Services
 
                 if (hash != Collision.Password.Hash) return "password hash does not match";
 
+                _account = Collision;
             }
-            return "valid";
+
+            string token = GenerateToken(_account);
+            return token;
+        }
+        private string GenerateToken(Account account)
+        {
+            var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["Jwt:Key"]));
+            var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
+
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.NameIdentifier, account.Surname),
+                new Claim(ClaimTypes.Email, account.Email),
+            };
+
+            var token = new JwtSecurityToken(configuration["Jwt:Issuer"],
+                configuration["Jwt:Audience"],
+                claims,
+                expires: DateTime.Now.AddMinutes(15),
+                signingCredentials: credentials);
+
+            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }
