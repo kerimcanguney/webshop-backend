@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< Updated upstream
   "dgSpecHash": "+rz7k9QbgG44U23f/g3OFsL9ErL/ZcJv/n6zmDD0ul1NlIPqvFj9JSb6F2ufelNBxhOrBTE4rqbuAHlizJf3BQ==",
-=======
-  "dgSpecHash": "sGJ8TKA1dVpuYz56f6odCriiJHl/Q0CrYE4MMQELjmcTr655M/igIm+22NduZp4hxbnjK5tJ8NK5KKYTzsjeoA==",
->>>>>>> Stashed changes
   "success": true,
   "projectFilePath": "D:\\School-S3\\webshop-backend\\Account-API\\Account-API\\Account-API.csproj",
   "expectedPackageFiles": [
@@ -106,11 +102,14 @@
     "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512",
-    "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512"
+    "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\School-S3\\webshop-backend\\Account-API\\Account-API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

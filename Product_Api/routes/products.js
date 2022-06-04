@@ -20,8 +20,11 @@ router.get("/:id", getProduct ,async (req,res) =>{
 // POST 
 router.post('/', async (req,res) => {
     const product = new Product({
-        title: req.body.title,
-        price: req.body.price
+        name: req.body.name,
+        price: req.body.price,
+        description: req.body.description,
+        createdAt: Date.now(),
+        sizes: req.body.sizes
     })
     try {
         const newProduct = await product.save()
