@@ -14,6 +14,10 @@ const ProductSchema = mongoose.Schema({
         type: Number,
         required: true
     },
+    imgUrl: {
+        type: String,
+        required:true
+    },
     createdAt:[Date],
     description: [String],
     sizes: [SizesSchema]
