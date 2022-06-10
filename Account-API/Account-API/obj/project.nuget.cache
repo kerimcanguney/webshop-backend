@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+rz7k9QbgG44U23f/g3OFsL9ErL/ZcJv/n6zmDD0ul1NlIPqvFj9JSb6F2ufelNBxhOrBTE4rqbuAHlizJf3BQ==",
+  "dgSpecHash": "FoHLQVTL1tTlshHhT4h6IjMkvZEYkipUhoG26nZxHecx5UoeZdEQ31zeSdP3XlOGqR4haTTjhmq+ej54dt5HsQ==",
   "success": true,
   "projectFilePath": "D:\\School-S3\\webshop-backend\\Account-API\\Account-API\\Account-API.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
@@ -104,12 +105,5 @@
     "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Kerimcan\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\School-S3\\webshop-backend\\Account-API\\Account-API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }
