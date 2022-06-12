@@ -38,6 +38,13 @@ namespace Account_API.Controllers
             return new Token() { token = token };
         }
 
+        [HttpDelete]
+        [Route("/Delete")]
+        public string RemoveAccount(string Email)
+        {
+            return accountService.RemoveAccount(Email);
+        }
+
         [HttpGet]
         [Authorize]
         [Route("/Settings")]

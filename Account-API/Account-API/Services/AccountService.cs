@@ -30,6 +30,24 @@ namespace Account_API.Services
 
             return "Success";
         }
+        public string RemoveAccount(string email)
+        {
+            using (var context = new WsContext())
+            {
+                var CollisionList = context.Accounts.Where(x => x.Email == email).ToList();
+                var CollidingEmail = CollisionList.Find(x => x.Email == email);
+
+                if (CollidingEmail != null)
+                {
+                    context.Remove(CollidingEmail);
+
+                    context.SaveChanges();
+                    return "Removed";
+                }
+            }
+
+            return "N/A";
+        }
         private Account convertToDAL(AccountDTO accountDTO)
         {
             byte[] salt = PasswordHashing.CreateSalt();
