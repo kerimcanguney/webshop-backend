@@ -7,7 +7,7 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0 AS build
 WORKDIR /src
-COPY ["Account-API/Account-API.csproj", "Account-API/"]
+COPY ["/Account-API/Account-API/Account-API.csproj", "Account-API/"]
 RUN dotnet restore "Account-API/Account-API.csproj"
 COPY . .
 WORKDIR "/src/Account-API"
