@@ -21,7 +21,6 @@ app.use(cors(corsOption))
     
 // enabling routes
 app.use('/products',productRouter)
-app.use(express.static(path.join(__dirname, 'public')))
 
 // server port
 app.listen(port, () => console.log(`Server listening on port http://localhost:${port}`))
